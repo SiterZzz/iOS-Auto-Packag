@@ -25,8 +25,8 @@ xcodebuild -exportArchive -archivePath  $archive_path -exportPath $api_path -exp
 
 # 将 .ipa 的包上传至蒲公英平台
 curl -F "file=@$api_path/$scheme_name.ipa" \
--F "uKey=xxx" \
--F "_api_key=xxx" \
+-F "uKey=45a563953a37172ca57275f6ade92cdf" \
+-F "_api_key=d446602ae414c69ff97f0eb362049055" \
 -F "updateDescription=$1" \
 https://www.pgyer.com/apiv1/app/upload
 
